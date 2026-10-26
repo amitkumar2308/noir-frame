@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOIRFRAME — Cinematic Director & DP Portfolio
 
-## Getting Started
+A luxury, interactive cinematography portfolio built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Features scroll-driven canvas frame sequencing, cinematic letterboxing, grain, vignette overlays, and an editorial dark aesthetic.
 
-First, run the development server:
+![NoirFrame Preview](public/images/cinema-set.jpg)
+
+---
+
+## ✨ Features
+
+- **Continuous Scroll Frame Sequence**: 196-frame high-resolution sequence rendered on an HTML5 canvas with smooth scrub playback and DPR scaling.
+- **Cinematic Atmosphere**: Film grain textures, anamorphic lens flare accents, subtle golden vignettes, and 2.39:1 aspect ratio cues.
+- **Dedicated Project Showcase (`/work`)**: Complete showcase categorized into Feature Films, Fashion & Commercials, Music Videos, and Documentaries with technical camera/lens breakdowns.
+- **Directing & DP Services (`/services`)**: Full production packages with day-rate transparency, gear kit specifications (ARRI Alexa 35, Cooke Anamorphic), and workflow timelines.
+- **Seamless Navigation & Audio Mood**: Frosted glass floating navbar, soundscape mood indicator, and quick project booking modal.
+- **Fully Responsive & Performance Tuned**: Preloaded keyframes, RAF throttled scroll handlers, and optimized Next.js layout structure.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/) & HTML5 Canvas 2D
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: Playfair Display (Serif), Cinzel (Cinematic Titles), Inter / Montserrat
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/noir-frame.git
+cd noir-frame
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+noir-frame/
+├── public/
+│   ├── frames/         # Frame sequence for canvas scrub
+│   ├── hero-frames/    # 196 continuous motion frames
+│   └── images/         # High-resolution film stills & behind-the-scenes
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx  # Root layout with fonts & global audio/nav
+│   │   ├── page.tsx    # Cinematic Homepage with Hero Canvas & Sections
+│   │   ├── services/   # DP & Production services breakdown
+│   │   └── work/       # Full filmography & cinematography gallery
+│   ├── components/
+│   │   └── cinematic/  # Custom UI components, overlays & navigation
+│   ├── data/           # Cinematic scenes & project metadata
+│   └── hooks/          # Scroll progress & frame sequence hooks
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎬 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Amit Kumar**  
+Director of Photography & Cinematographer  
+Portfolio: [NoirFrame](http://localhost:3000)
