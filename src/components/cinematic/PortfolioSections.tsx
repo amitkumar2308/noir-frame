@@ -5,19 +5,6 @@ import { useEffect, useRef, useState } from "react";
 /* --- Design tokens ------------------------------------------- */
 const F = { display: "var(--font-space-grotesk,'Space Grotesk',sans-serif)", primary: "var(--font-dm-sans,'DM Sans',sans-serif)" };
 
-/* --- Intersection observer hook ------------------------------ */
-function useInView(threshold = 0.15) {
-  const ref = useRef<HTMLElement>(null);
-  const [inView, setInView] = useState(false);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setInView(true); }, { threshold });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [threshold]);
-  return { ref, inView };
-}
 
 /* --- Animated counter ---------------------------------------- */
 function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {

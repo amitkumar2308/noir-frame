@@ -85,10 +85,10 @@ function ServiceItem({ service, index }: { service: typeof SERVICES[0]; index: n
               </li>
             ))}
           </ul>
-          <a href="/#contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", marginTop: "32px", padding: "12px 24px", borderRadius: "9999px", background: "#1a1a1a", color: "#ffffff", fontFamily: Fp, fontSize: "13px", fontWeight: 400, textDecoration: "none" }}>
+          <Link href="/#contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", marginTop: "32px", padding: "12px 24px", borderRadius: "9999px", background: "#1a1a1a", color: "#ffffff", fontFamily: Fp, fontSize: "13px", fontWeight: 400, textDecoration: "none" }}>
             Enquire about this service
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
